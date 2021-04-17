@@ -83,8 +83,9 @@ public class Glavna {
 
         }
 
-
+        log.info("Aplikacija je zavrsila s radom!");
     }
+
 
     /**
      * Služi za provjeru unosa duplih osoba.
@@ -139,7 +140,7 @@ public class Glavna {
         System.out.print("Unesi naziv " + (i + 1) + ". županije: ");
 
         String nazivZupanija = ulaz.nextLine();
-        log.trace("Unesen je naziv zupanije!" );
+        log.trace("Unesen je naziv zupanije! "+   (i+1) + " "+ nazivZupanija);
 
         Boolean greska;
         Integer brojStanovnikaZupanija = null;
@@ -151,10 +152,10 @@ public class Glavna {
 
             } catch (InputMismatchException ex) {
                 ulaz.nextLine();
-
-
                 greska = true;
                 System.out.println("Pogreška u formatu podataka, molimo ponovite unos!");
+                log.info("Unesen je pogresni tip podatka!");
+                log.error(ex.getMessage(), ex);;
             }
         } while (greska);
 
@@ -167,12 +168,26 @@ public class Glavna {
 
     }
 
+    /**
+     * Metodo služi za unos osoba te zupanija bolesti i kontakitranih osoba
+     *
+     * @param ulaz  scanner
+     * @param zupanije lista zupaija
+     * @param bolesti list bolest
+     * @param osobe  listsa osoba
+     * @param i brojač
+     * @return novu osobu
+     * @throws DuplikatKontaktiraneOsobeException
+     */
+
     private static Osoba unosOsoba(Scanner ulaz, Zupanija[] zupanije, Bolest[] bolesti, Osoba[] osobe, int i) throws DuplikatKontaktiraneOsobeException {
         System.out.print("Unesi ime " + (i + 1) + ". osobe: ");
         String imeOsoba = ulaz.nextLine();
+        log.trace("Unesen je ime zupanije! "+   (i+1) + " "+ imeOsoba);
 
         System.out.print("Unesi prezime osobe: ");
         String prezimeOsoba = ulaz.nextLine();
+        log.trace("Unesen je ime prezime! "+   (i+1) + " "+ prezimeOsoba);
 
         Integer starostOsoba = null;
         Integer izborZupanije = null;
@@ -183,6 +198,7 @@ public class Glavna {
             System.out.print("Unesi starost osobe: ");
             starostOsoba = ulaz.nextInt();
             ulaz.nextLine();
+            log.trace("Unesen je ime storsot osobe!" + starostOsoba);
 
         } catch (InputMismatchException ex) {
             System.out.println("NESIPRAVAN unos!! Mogući unos samo brojeva.");
@@ -206,7 +222,8 @@ public class Glavna {
                 ulaz.nextLine();
                 greska = true;
                 System.out.println("NESIPRAVN unos!! SAMO brojevi!");
-            }
+                log.info("Unesen je pogresni tip podatka!");
+                log.error(ex.getMessage(), ex);;            }
         } while (greska);
         Zupanija zupanija = zupanije[izborZupanije - 1];
 
@@ -225,6 +242,8 @@ public class Glavna {
                 ulaz.nextLine();
                 greska = true;
                 System.out.println("NESIPRAVN unos!! SAMO brojevi!");
+                log.info("Unesen je pogresni tip podatka!");
+                log.error(ex.getMessage(), ex);;
 
             }
         } while (greska);
@@ -249,6 +268,8 @@ public class Glavna {
                     ulaz.nextLine();
                     greska = true;
                     System.out.println("NESIPRAVN unos!! SAMO brojevi!");
+                    log.info("Unesen je pogresni tip podatka!");
+                    log.error(ex.getMessage(), ex);
                 }
             } while (greska);
 
@@ -271,11 +292,10 @@ public class Glavna {
                         kontaktiraneOsobe[k] = osobe[izborOsobe - 1];
                     } catch (InputMismatchException ex) {
                         ulaz.nextLine();
-
                         System.out.println("NESIPRAVN unos!! SAMO brojevi!");
-
+                        log.info("Unesen je pogresni tip podatka!");
+                        log.error(ex.getMessage(), ex);
                     }
-
                 }
             } else {
                 kontaktiraneOsobe = new Osoba[0];
@@ -291,6 +311,15 @@ public class Glavna {
         return novaOsoba;
     }
 
+    /**
+     * Metoda služi za unos Bolesti ili Virusa
+     *
+     * @param ulaz scanner s tipkovnice
+     * @param simptomi lista
+     * @param bolesti lsita
+     * @param i brojač
+     * @return bolest
+     */
 
     private static Bolest unosBolesti(Scanner ulaz, Simptom[] simptomi, Bolest[] bolesti, int i) {
 
@@ -317,6 +346,8 @@ public class Glavna {
             } catch (InputMismatchException ex) {
                 ulaz.nextLine();
                 System.out.println("NESIPRAVAN unos!! SAMO brojevi! ");
+                log.info("Unesen je pogresni tip podatka!");
+                log.error(ex.getMessage(), ex);
             }
         } while (odabranaVrsta >= 3 || odabranaVrsta <= 0);
         ulaz.nextLine();
@@ -334,13 +365,13 @@ public class Glavna {
                 greska=true;
                 log.error("Došlo je do pogreške u radu aplikacije! {} ", e.getMessage());
                 System.out.println(e.getMessage());
+                log.info("Unesen je pogresni tip podatka!");
+
             }//ako nije greska
             if(!greska);
             break;
 
         }while(!greska);
-
-
 
         do {
             greska = false;
@@ -358,6 +389,8 @@ public class Glavna {
                 ulaz.nextLine();
                 greska = true;
                 System.out.println("NESIPRAVAN unos!! SAMO brojevi!");
+                log.info("Unesen je pogresni tip podatka!");
+                log.error(ex.getMessage(), ex);
             }
         } while (greska);
 
@@ -413,13 +446,22 @@ public class Glavna {
     }
 
 
-
+    /**
+     * Motada za unos simptoma
+     *
+     * @param ulaz scanner  unso podataka s tipkovnice
+     * @param i brojač
+     * @return novo uneseni simptom
+     */
     private static Simptom unosSimptoma(Scanner ulaz, int i) {
         System.out.print("Unesite naziv  " + (i + 1) + ". simptoma: ");
         String nazivSimptoma = ulaz.nextLine();
+        log.trace("Unesen je naziv simptoma! "+   (i+1) + ". "+ nazivSimptoma);
 
         System.out.print("Unesite vrijednost " + (i + 1) + ". simptoma (RIJETKO, SREDNJE ILI ČESTO): ");
         String vrijednostSimptoma = ulaz.nextLine();
+        log.trace("Unesena je vrijednost stimptma ! "+   (i+1) + ". "+ vrijednostSimptoma);
+
 
         Simptom noviSimptom = new Simptom(nazivSimptoma, vrijednostSimptoma);
         return noviSimptom;

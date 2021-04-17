@@ -1,24 +1,40 @@
 package main.hr.java.covidportal.iznimke;
 
+/**
+ * Predstavlja neoznačenu iznimku BolestIstihSimptomaException+
+ *
+ */
 //neoznačena iznimka
 
-public class BolestIstihSimptomaException extends Exception {
+public class BolestIstihSimptomaException extends RuntimeException {
     public BolestIstihSimptomaException() {
     }
 
-public BolestIstihSimptomaException(String message) {
+    /**
+     * Inicijalizacija iznimke
+     *
+     * @param message poruka
+     */
+    public BolestIstihSimptomaException(String message) {
         super(message);
     }
 
+    /**
+     * Inicijalizacija iznimke
+     *
+     * @param message poruka
+     * @param cause   uzrok
+     */
     public BolestIstihSimptomaException(String message, Throwable cause) {
         super(message, cause);
     }
 
+    /**
+     * Inicijalizacija iznimke
+     *
+     * @param cause uzrok
+     */
     public BolestIstihSimptomaException(Throwable cause) {
         super(cause);
-    }
-
-    public BolestIstihSimptomaException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-        super(message, cause, enableSuppression, writableStackTrace);
     }
 }

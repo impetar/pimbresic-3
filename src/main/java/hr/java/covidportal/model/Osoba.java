@@ -1,5 +1,8 @@
 package main.java.hr.java.covidportal.model;
 
+/**
+ * Predstavlja Entitet Osobe
+ */
 public class Osoba {
 
     private String ime;
@@ -9,7 +12,15 @@ public class Osoba {
     private Bolest bolest;
     private Osoba[] kontaktiraneOsobe;
 
-
+    /**
+     * Inicijalizacja podataka o imenu, prezimenu, starotsti, zupanije, bolesti, kontaktiranojOsobi
+     * @param ime       podatka o imenu
+     * @param prezime   podatka o prezimenu
+     * @param starost   podatka o starosti
+     * @param zupanija  podatka o zupaniji
+     * @param bolest    podatak o boelst
+     * @param kontaktiraneOsobe     podatak o kontaktiranoj osobi
+     */
 
     public Osoba(String ime, String prezime, Integer starost, Zupanija zupanija, Bolest bolest, Osoba[] kontaktiraneOsobe) {
         this.ime = ime;
@@ -78,6 +89,9 @@ private Osoba (){
         this.kontaktiraneOsobe = kontaktiraneOsobe;
     }
 
+    /**
+     * Metoda za izradau buildera
+     */
     public static class Builder {
         private String ime;
         private String prezime;
@@ -122,6 +136,10 @@ private Osoba (){
 
         }
 
+        /**
+         * Izbildana metaoda klase osoba
+         * @return osobu
+         */
         public Osoba build(){
             Osoba osoba = new Osoba();
             osoba.ime =this.ime;

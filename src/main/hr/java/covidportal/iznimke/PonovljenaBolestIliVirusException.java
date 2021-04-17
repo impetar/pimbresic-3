@@ -1,5 +1,8 @@
 package main.hr.java.covidportal.iznimke;
 
+/**
+ *N
+ */
 public class PonovljenaBolestIliVirusException extends RuntimeException {
         /*
 1.      Rješenje zadatka za pripremu proširiti na način da se doda nova neoznačena iznimka
@@ -30,7 +33,5 @@ public class PonovljenaBolestIliVirusException extends RuntimeException {
         super(cause);
     }
 
-    public PonovljenaBolestIliVirusException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-        super(message, cause, enableSuppression, writableStackTrace);
-    }
+
 }
