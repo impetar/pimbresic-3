@@ -1,0 +1,31 @@
+2021-04-16 19:24:40,941 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:28] Program je pokrenut
+2021-04-16 21:12:54,803 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:28] Program je pokrenut
+2021-04-16 21:23:05,919 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:28] Program je pokrenut
+2021-04-16 21:23:40,335 ERROR [main] m.j.h.j.c.m.Glavna [Glavna.java:299] Došlo je do pogreške u radu aplikacije!  
+main.hr.java.covidportal.iznimke.BolestIstihSimptomaException: Ta bolest je već UNESENA!!! 
+	at main.java.hr.java.covidportal.main.Glavna.provjeriDubpleBolestiIVirusa(Glavna.java:101)
+	at main.java.hr.java.covidportal.main.Glavna.unosBolesti(Glavna.java:297)
+	at main.java.hr.java.covidportal.main.Glavna.main(Glavna.java:58)
+2021-04-16 21:24:05,723 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:28] Program je pokrenut
+2021-04-16 21:25:17,592 ERROR [main] m.j.h.j.c.m.Glavna [Glavna.java:299] Došlo je do pogreške u radu aplikacije!  
+2021-04-16 21:27:56,199 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:28] Program je pokrenut
+2021-04-16 21:28:18,612 ERROR [main] m.j.h.j.c.m.Glavna [Glavna.java:299] Došlo je do pogreške u radu aplikacije!  
+2021-04-16 21:32:27,849 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:28] Program je pokrenut
+2021-04-16 21:33:55,040 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:28] Program je pokrenut
+2021-04-16 21:34:17,675 ERROR [main] m.j.h.j.c.m.Glavna [Glavna.java:299] Došlo je do pogreške u radu aplikacije! Ta bolest je već UNESENA!!!  
+2021-04-16 21:46:37,828 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:28] Program je pokrenut
+2021-04-16 21:49:10,233 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:28] Program je pokrenut
+2021-04-16 21:49:26,596 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:28] Program je pokrenut
+2021-04-16 21:55:23,512 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:28] Program je pokrenut
+2021-04-16 21:55:28,835 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:28] Program je pokrenut
+2021-04-16 21:59:56,559 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:28] Program je pokrenut
+2021-04-16 22:02:32,617 ERROR [main] m.j.h.j.c.m.Glavna [Glavna.java:304] Došlo je do pogreške u radu aplikacije! Ta bolest je već UNESENA!!!  
+2021-04-16 23:41:20,541 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:28] Program je pokrenut
+2021-04-17 00:16:55,425 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:32] Program je pokrenut.
+2021-04-17 00:16:55,440 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:42] Započet unos županija.
+2021-04-17 00:17:05,220 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:46] Završen unos županija.
+2021-04-17 00:17:05,222 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:53] Započet unos simptoma.
+2021-04-17 00:17:19,832 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:32] Program je pokrenut.
+2021-04-17 00:17:19,832 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:42] Započet unos županija.
+2021-04-17 00:20:26,338 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:46] Završen unos županija.
+2021-04-17 00:20:26,353 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:53] Započet unos simptoma.
