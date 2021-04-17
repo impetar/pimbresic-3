@@ -29,3 +29,111 @@ main.hr.java.covidportal.iznimke.BolestIstihSimptomaException: Ta bolest je već
 2021-04-17 00:17:19,832 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:42] Započet unos županija.
 2021-04-17 00:20:26,338 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:46] Završen unos županija.
 2021-04-17 00:20:26,353 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:53] Započet unos simptoma.
+2021-04-17 14:36:22,934 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:32] Program je pokrenut.
+2021-04-17 14:36:22,934 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:42] Započet unos županija.
+2021-04-17 14:36:26,506 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:143] Unesen je naziv zupanije! 1 ZGB
+2021-04-17 14:36:29,934 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:143] Unesen je naziv zupanije! 2 vt
+2021-04-17 14:36:31,023 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:46] Završen unos županija.
+2021-04-17 14:36:31,023 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:53] Započet unos simptoma.
+2021-04-17 14:36:37,513 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:459] Unesen je naziv simptoma! 1. Kašalj
+2021-04-17 14:36:44,617 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:463] Unesena je vrijednost stimptma ! 1. CESTO
+2021-04-17 14:36:47,176 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:459] Unesen je naziv simptoma! 2. GLOBOLJA
+2021-04-17 14:36:54,241 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:463] Unesena je vrijednost stimptma ! 2. RIJETKO
+2021-04-17 14:36:54,242 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:59] Završen unos simptoma.
+2021-04-17 14:36:54,243 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:63] Započet unos bolesti.
+2021-04-17 14:37:13,213 ERROR [main] m.j.h.j.c.m.Glavna [Glavna.java:366] Došlo je do pogreške u radu aplikacije! Ta bolest je već UNESENA!!!  
+2021-04-17 14:37:13,228 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:368] Unesen je pogresni tip podatka!
+2021-04-17 14:37:34,533 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:392] Unesen je pogresni tip podatka!
+2021-04-17 14:37:34,533 ERROR [main] m.j.h.j.c.m.Glavna [Glavna.java:393] null
+java.util.InputMismatchException: null
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at main.java.hr.java.covidportal.main.Glavna.unosBolesti(Glavna.java:381)
+	at main.java.hr.java.covidportal.main.Glavna.main(Glavna.java:66)
+2021-04-17 14:41:29,268 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:32] Program je pokrenut.
+2021-04-17 14:41:29,284 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:42] Započet unos županija.
+2021-04-17 14:41:40,525 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:143] Unesen je naziv zupanije! 1 ZG
+2021-04-17 14:41:44,090 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:143] Unesen je naziv zupanije! 2 Vž
+2021-04-17 14:41:44,762 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:46] Završen unos županija.
+2021-04-17 14:41:44,762 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:53] Započet unos simptoma.
+2021-04-17 14:41:47,806 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:459] Unesen je naziv simptoma! 1. Kašalj
+2021-04-17 14:41:50,416 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:463] Unesena je vrijednost stimptma ! 1. Rijetko
+2021-04-17 14:41:54,429 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:459] Unesen je naziv simptoma! 2. Temepratura
+2021-04-17 14:41:55,377 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:463] Unesena je vrijednost stimptma ! 2. visoka
+2021-04-17 14:41:55,377 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:59] Završen unos simptoma.
+2021-04-17 14:41:55,377 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:63] Započet unos bolesti.
+2021-04-17 14:43:09,565 ERROR [main] m.j.h.j.c.m.Glavna [Glavna.java:366] Došlo je do pogreške u radu aplikacije! Ta bolest je već UNESENA!!!  
+2021-04-17 14:43:12,560 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:368] Unesen je pogresni tip podatka!
+2021-04-17 14:46:35,594 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:32] Program je pokrenut.
+2021-04-17 14:46:35,610 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:42] Započet unos županija.
+2021-04-17 14:46:38,567 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:143] Unesen je naziv zupanije! 1 ZG
+2021-04-17 14:46:41,125 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:143] Unesen je naziv zupanije! 2 Vž
+2021-04-17 14:46:41,828 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:46] Završen unos županija.
+2021-04-17 14:46:41,828 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:53] Započet unos simptoma.
+2021-04-17 14:46:45,959 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:460] Unesen je naziv simptoma! 1. kašalj
+2021-04-17 14:46:48,573 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:464] Unesena je vrijednost stimptma ! 1. rijetko
+2021-04-17 14:46:52,053 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:460] Unesen je naziv simptoma! 2. temperatura 
+2021-04-17 14:46:53,877 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:464] Unesena je vrijednost stimptma ! 2. visoka
+2021-04-17 14:46:53,877 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:59] Završen unos simptoma.
+2021-04-17 14:46:53,877 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:63] Započet unos bolesti.
+2021-04-17 14:48:43,031 ERROR [main] m.j.h.j.c.m.Glavna [Glavna.java:366] Došlo je do pogreške u radu aplikacije! Ta bolest je već UNESENA!!!  
+2021-04-17 14:48:45,907 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:368] Unesen je pogresni tip podatka!
+2021-04-17 14:58:08,963 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:32] Program je pokrenut.
+2021-04-17 14:58:08,985 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:42] Započet unos županija.
+2021-04-17 14:58:11,468 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:143] Unesen je naziv zupanije! 1 zgb
+2021-04-17 14:58:12,840 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:143] Unesen je naziv zupanije! 2 fdgdf
+2021-04-17 14:58:13,366 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:46] Završen unos županija.
+2021-04-17 14:58:13,366 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:53] Započet unos simptoma.
+2021-04-17 14:58:14,662 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:459] Unesen je naziv simptoma! 1. fgsfdg
+2021-04-17 14:58:15,404 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:463] Unesena je vrijednost stimptma ! 1. dfsgsdfg
+2021-04-17 14:58:16,036 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:459] Unesen je naziv simptoma! 2. sfgsfdg
+2021-04-17 14:58:16,622 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:463] Unesena je vrijednost stimptma ! 2. sdfggfsds
+2021-04-17 14:58:16,622 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:59] Završen unos simptoma.
+2021-04-17 14:58:16,622 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:63] Započet unos bolesti.
+2021-04-17 14:59:31,765 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:32] Program je pokrenut.
+2021-04-17 14:59:31,781 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:42] Započet unos županija.
+2021-04-17 14:59:36,195 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:143] Unesen je naziv zupanije! 1 gfzdgfh
+2021-04-17 14:59:37,210 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:143] Unesen je naziv zupanije! 2 fghdfgh
+2021-04-17 14:59:37,698 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:46] Završen unos županija.
+2021-04-17 14:59:37,698 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:53] Započet unos simptoma.
+2021-04-17 14:59:38,300 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:459] Unesen je naziv simptoma! 1. dfghdfgh
+2021-04-17 14:59:39,079 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:463] Unesena je vrijednost stimptma ! 1. dfghdgf
+2021-04-17 14:59:39,403 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:459] Unesen je naziv simptoma! 2. dfgh
+2021-04-17 14:59:40,346 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:463] Unesena je vrijednost stimptma ! 2. dgfhcfgh
+2021-04-17 14:59:40,346 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:59] Završen unos simptoma.
+2021-04-17 14:59:40,346 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:63] Započet unos bolesti.
+2021-04-17 15:00:48,704 ERROR [main] m.j.h.j.c.m.Glavna [Glavna.java:366] Došlo je do pogreške u radu aplikacije! Ta bolest je već UNESENA!!!  
+2021-04-17 15:00:55,079 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:368] Unesen je pogresni tip podatka!
+2021-04-17 15:02:15,605 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:32] Program je pokrenut.
+2021-04-17 15:02:15,615 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:42] Započet unos županija.
+2021-04-17 15:02:18,272 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:143] Unesen je naziv zupanije! 1 sdfsd
+2021-04-17 15:02:18,822 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:157] Unesen je pogresni tip podatka!
+2021-04-17 15:02:18,822 ERROR [main] m.j.h.j.c.m.Glavna [Glavna.java:158] null
+java.util.InputMismatchException: null
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at main.java.hr.java.covidportal.main.Glavna.unosZupanija(Glavna.java:151)
+	at main.java.hr.java.covidportal.main.Glavna.main(Glavna.java:44)
+2021-04-17 15:02:24,001 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:143] Unesen je naziv zupanije! 2 dfgsdf
+2021-04-17 15:02:25,152 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:46] Završen unos županija.
+2021-04-17 15:02:25,152 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:53] Započet unos simptoma.
+2021-04-17 15:02:25,971 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:459] Unesen je naziv simptoma! 1. dfgdfs
+2021-04-17 15:02:26,475 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:463] Unesena je vrijednost stimptma ! 1. sfdgsfdg
+2021-04-17 15:02:26,854 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:459] Unesen je naziv simptoma! 2. sfdgsdfg
+2021-04-17 15:02:27,127 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:463] Unesena je vrijednost stimptma ! 2. sfdg
+2021-04-17 15:02:27,127 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:59] Završen unos simptoma.
+2021-04-17 15:02:27,127 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:63] Započet unos bolesti.
+2021-04-17 15:03:08,651 ERROR [main] m.j.h.j.c.m.Glavna [Glavna.java:366] Došlo je do pogreške u radu aplikacije! Ta bolest je već UNESENA!!!  
+2021-04-17 15:03:09,454 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:368] Unesen je pogresni tip podatka!
+2021-04-17 15:03:22,980 ERROR [main] m.j.h.j.c.m.Glavna [Glavna.java:366] Došlo je do pogreške u radu aplikacije! Ta bolest je već UNESENA!!!  
+2021-04-17 15:03:23,328 INFO [main] m.j.h.j.c.m.Glavna [Glavna.java:368] Unesen je pogresni tip podatka!
+2021-04-17 15:03:51,936 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:186] Unesen je ime zupanije! 1 janko
+2021-04-17 15:03:53,942 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:190] Unesen je ime prezime! 1 jankic
+2021-04-17 15:03:55,478 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:201] Unesen je ime storsot osobe!22
+2021-04-17 15:04:00,650 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:186] Unesen je ime zupanije! 2 janko
+2021-04-17 15:04:02,104 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:190] Unesen je ime prezime! 2 jankic
+2021-04-17 15:04:03,834 TRACE [main] m.j.h.j.c.m.Glavna [Glavna.java:201] Unesen je ime storsot osobe!22

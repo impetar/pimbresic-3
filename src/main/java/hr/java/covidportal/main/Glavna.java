@@ -352,8 +352,8 @@ public class Glavna {
         } while (odabranaVrsta >= 3 || odabranaVrsta <= 0);
         ulaz.nextLine();
         String nazivBolesti;
-
-        do {greska=false;
+        Boolean gres;
+        do {gres=false;
 
             System.out.print("Unesite naziv  " + (i + 1) + ". bolesti ili virusa: ");
             nazivBolesti = ulaz.nextLine();
@@ -362,16 +362,16 @@ public class Glavna {
 
                 provjeriDubpleBolestiIVirusa(bolesti, nazivBolesti);
             } catch (BolestIstihSimptomaException e) {
-                greska=true;
+
                 log.error("Došlo je do pogreške u radu aplikacije! {} ", e.getMessage());
                 System.out.println(e.getMessage());
                 log.info("Unesen je pogresni tip podatka!");
+                gres=true;
 
             }//ako nije greska
-            if(!greska);
-            break;
 
-        }while(!greska);
+
+        }while(gres);
 
         do {
             greska = false;
